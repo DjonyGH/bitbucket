@@ -1,16 +1,7 @@
 # bitbucket
 Test tasks from Goodline
 
-Шаг 1. Клоирование проекта на локальный ПК
-git clone https://github.com/DjonyGH/bitbucket.git
+Проект по заданию №1 расположен в ветке task-1, для перехода в эту ветку, нужно испльзовать команду: git checkout task-1
 
-Шаг 2. Разворачивание проекта
-git install
-
-Шаг 3. Сборка проекта
-npm run dev (сборка в режиме разработки)
-npm run start (сборка в режиме онлайн-разработки webpack-dev-server/ localhost:9000)
-npm run build (сборка в режиме продакшена)
-
-После сборки итоговый проект будет в папке public
+Проект по заданию №2 расположен в ветке task-2, для перехода в эту ветку, нужно испльзовать команду: git checkout task-2
 
