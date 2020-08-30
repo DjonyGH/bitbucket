@@ -1,5 +1,5 @@
 # bitbucket
-Test tasks from Goodline
+Test tasks #2 from Goodline
 
 Шаг 1. Клоирование проекта на локальный ПК
 git clone https://github.com/DjonyGH/bitbucket.git
