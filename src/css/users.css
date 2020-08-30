@@ -1,0 +1,48 @@
+.comments{
+    font-family: sans-serif;
+    width: 100%;
+}
+.title{
+    margin: 10px 0 5px 0;
+    text-align: center;
+}
+.users-table {
+    margin: 0 auto;
+    width: 900px;
+    /* border: 1px solid black; */
+}
+.users-table__row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.users-table__col--title {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    border: 1px solid black;
+    padding: 5px 15px;
+    margin-left: 5px;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.users-table__col:first-child {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    border: 1px solid black;
+    padding: 5px 15px;
+    margin-left: 5px;
+    justify-content: start;
+}
+.users-table__col {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    border: 1px solid black;
+    padding: 5px 15px;
+    margin-left: 5px;
+    justify-content: center;
+}
+

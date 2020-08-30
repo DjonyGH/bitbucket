@@ -1,12 +1,12 @@
 {
-  "name": "testtaskfromgoodline",
+  "name": "mod.14",
   "version": "1.0.0",
-  "description": "Test Task From Goodline",
+  "description": "Learning Webpack and babel",
   "main": "./index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack --mode development",
-    "start": "./node_modules/.bin/webpack-dev-server"
+    "server": "./node_modules/.bin/webpack-dev-server"
   },
   "keywords": [
     "webpack",
@@ -27,6 +27,7 @@
     "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "json-loader": "^0.5.7",
     "mini-css-extract-plugin": "^0.9.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "style-loader": "^1.2.1",
@@ -37,7 +38,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.10.1",
-    "bootstrap": "^5.0.0-alpha1",
-    "swiper": "^6.1.2"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }

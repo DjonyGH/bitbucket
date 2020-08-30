@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require("webpack");
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
@@ -51,12 +52,9 @@ module.exports = {
             }
         }),
         new CleanWebpackPlugin(),
-        new CopyPlugin({patterns: [
-            { from: './img', to: 'img' },
-            { from: './fonts', to: 'fonts' },
-            { from: './bootstrap', to: 'bootstrap' }
-
-        ]}),
+        // new CopyPlugin({patterns: [
+        //     { from: './images', to: 'images' }
+        // ]}),
         new MiniCssExtractPlugin({
             filename: filename('css')
         })
@@ -64,17 +62,14 @@ module.exports = {
     module: {
         rules:[
             {
-                test: /\.css$/,
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            hmr: isDev,
-                            reloadAll: true,
-                        },
-                    }, 
-                    'css-loader'
-                ],
+                test: /\.css$/i,
+                use: [{
+                    loader: MiniCssExtractPlugin.loader,
+                    options: {
+                      hmr: isDev,
+                      reloadAll: true,
+                    },
+                  }, 'css-loader'],
             },
             {
                 test: /\.(png|jpg|svg)$/,
@@ -92,7 +87,12 @@ module.exports = {
                         ]
                     }
                 } 
+            },
+            {
+                test: /\.json$/,
+                use: ['json-loader'],
+                type: 'javascript/auto'
             }
-        ]
+        ]       
     }
 }
