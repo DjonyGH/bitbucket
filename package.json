@@ -1,7 +1,7 @@
 {
-  "name": "mod.14",
+  "name": "testtaskfromgoodline",
   "version": "1.0.0",
-  "description": "Learning Webpack and babel",
+  "description": "Test Task From Goodline",
   "main": "./index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
